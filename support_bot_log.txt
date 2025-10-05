@@ -1,0 +1,54 @@
+2025-10-05 00:45:40,851 - INFO - Starting to build the RAG chain with Pinecone...
+2025-10-05 00:45:41,216 - INFO - Use pytorch device_name: cpu
+2025-10-05 00:45:41,216 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-05 00:45:49,320 - INFO - Embeddings model 'all-MiniLM-L6-v2' loaded.
+2025-10-05 00:45:52,078 - INFO - Connected to existing Pinecone index 'support-bot-index'.
+2025-10-05 00:45:56,279 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-10-05 00:50:30,864 - INFO - QA pipeline with model 'distilbert-base-uncased-distilled-squad' loaded.
+2025-10-05 00:54:40,933 - INFO - Starting to build the RAG chain with Pinecone...
+2025-10-05 00:54:41,253 - INFO - Use pytorch device_name: cpu
+2025-10-05 00:54:41,295 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-05 00:54:47,498 - INFO - Embeddings model 'all-MiniLM-L6-v2' loaded.
+2025-10-05 00:54:50,646 - INFO - Connected to existing Pinecone index 'support-bot-index'.
+2025-10-05 00:55:00,714 - INFO - QA pipeline with model 'distilbert-base-uncased-distilled-squad' loaded.
+2025-10-05 00:55:00,728 - INFO - RAG chain created successfully.
+2025-10-05 01:06:37,813 - INFO - Starting to build the RAG chain with Pinecone...
+2025-10-05 01:06:38,132 - INFO - Use pytorch device_name: cpu
+2025-10-05 01:06:38,132 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-05 01:06:46,004 - INFO - Embeddings model 'all-MiniLM-L6-v2' loaded.
+2025-10-05 01:06:49,226 - INFO - Connected to existing Pinecone index 'support-bot-index'.
+2025-10-05 01:06:57,804 - INFO - QA pipeline with model 'distilbert-base-uncased-distilled-squad' loaded.
+2025-10-05 01:06:57,809 - INFO - RAG chain created successfully.
+2025-10-05 01:16:47,385 - INFO - Setting up retriever and LLM...
+2025-10-05 01:16:47,735 - INFO - Use pytorch device_name: cpu
+2025-10-05 01:16:47,735 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-05 01:17:00,439 - INFO - Retriever created successfully.
+2025-10-05 01:17:05,794 - INFO - QA pipeline with model 'distilbert-base-uncased-distilled-squad' loaded.
+2025-10-05 01:37:11,039 - INFO - Setting up retriever and LLM...
+2025-10-05 01:37:11,580 - INFO - Use pytorch device_name: cpu
+2025-10-05 01:37:11,583 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-05 01:37:24,882 - INFO - Connected to existing Pinecone index.
+2025-10-05 01:42:10,902 - INFO - Setting up retriever and LLM...
+2025-10-05 01:42:11,725 - INFO - Use pytorch device_name: cpu
+2025-10-05 01:42:11,725 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-05 01:42:28,911 - INFO - Creating new index: support_bot-index
+2025-10-05 01:50:39,489 - INFO - Setting up retriever and LLM...
+2025-10-05 01:50:40,600 - INFO - Use pytorch device_name: cpu
+2025-10-05 01:50:40,600 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-05 01:50:50,373 - INFO - Creating new index: support-bot-index
+2025-10-05 01:51:15,503 - INFO - Pinecone index created and documents loaded.
+2025-10-05 01:51:18,656 - INFO - Index stats: {'dimension': 384,
+ 'index_fullness': 0.0,
+ 'metric': 'cosine',
+ 'namespaces': {},
+ 'total_vector_count': 0,
+ 'vector_type': 'dense'}
+2025-10-05 02:00:06,121 - INFO - Setting up retriever and LLM...
+2025-10-05 02:00:06,756 - INFO - Use pytorch device_name: cpu
+2025-10-05 02:00:06,756 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-05 02:00:21,659 - INFO - Index stats: {'dimension': 384,
+ 'index_fullness': 0.0,
+ 'metric': 'cosine',
+ 'namespaces': {'': {'vector_count': 1}},
+ 'total_vector_count': 1,
+ 'vector_type': 'dense'}
