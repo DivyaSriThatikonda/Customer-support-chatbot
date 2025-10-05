@@ -2,7 +2,6 @@
 # Customer Support Bot with Agentic Workflow
 
 ![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 This project, developed for an assignment from Serri, is a smart customer support bot built in Python. It leverages modern NLP models to read and understand a provided document, answer user questions based on its content, and refine its responses through a simulated feedback mechanism. The entire application is presented through a clean, interactive web interface built with Streamlit.
 
@@ -11,7 +10,7 @@ This project, developed for an assignment from Serri, is a smart customer suppor
 
 The application is deployed and publicly accessible.
 
-[**--> Access the Deployed App Here <--**](YOUR_DEPLOYMENT_LINK_HERE)
+[**--> Access the Deployed App Here <--**](https://customer-support-chatbot-akejdjlt7brdpqj2empabp.streamlit.app/)
 
 ---
 ## ✨ Key Features
@@ -53,9 +52,9 @@ The bot operates through a multi-step pipeline:
   
 * **Web Framework**: Streamlit
   
-* **NLP Models**: Hugging Face `transformers`
+* **NLP Models**: Hugging Face `transformers`  (distilbert-base-uncased-distilled-squad)
   
-* **Semantic Search**: `sentence-transformers`
+* **Semantic Search**: `sentence-transformers` (all-MiniLM-L6-v2)
   
 * **Core Backend**: PyTorch
 
@@ -102,17 +101,24 @@ To run this project on your local machine, follow these steps:
 
 ├── sample_support_bot_log.txt  # Example log output of the bot's actions
 
-├── .gitignore              # Specifies files for Git to ignore
-
 └── README.md               # This file
 
 
 ---
 ## 📝 Logging
 
-The application logs key events, decisions, and errors to a file named `support_bot_log.txt`.  This provides transparency into the bot's internal workings. [cite_start]A sample log file, `sample_support_bot_log.txt`, is included in this repository to demonstrate the output.
+The application logs key events, decisions, and errors to a file named `support_bot_log.txt`.  This provides transparency into the bot's internal workings. A sample log file, `sample_support_bot_log.txt`, is included in this repository to demonstrate the output.
 
 ---
-## 📜 License
+## 🚀 Future Improvements
+This project successfully fulfills the core requirements, but there are several ways it could be enhanced to create a more robust and user-friendly application.
 
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+**Dynamic Document Upload:** Implement a file uploader in the Streamlit interface to allow users to upload their own documents (e.g., PDF, TXT, DOCX) for the bot to use as its knowledge base in real-time.
+
+**Interactive Feedback System:** Add buttons (e.g., 👍/👎) to the UI that allow users to provide real feedback on the bot's answers. This could be used to trigger the agent's _adjust_response logic or to collect data for future model fine-tuning.
+
+**Conversation Memory:** Integrate a memory component so the bot can recall previous questions and answers in the same session, allowing it to handle follow-up questions more effectively.
+
+**Advanced Model Integration:** Experiment with more powerful language models (such as T5-based or larger BERT variants) for potentially more accurate or nuanced answers.
+
+**Batch Indexing:** For very large documents, the initial processing can be slow. A future version could include an "indexing" step that processes and stores the embeddings in a vector database for faster loading and retrieval.
