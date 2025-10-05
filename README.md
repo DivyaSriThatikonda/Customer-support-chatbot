@@ -39,7 +39,7 @@ The bot operates through a multi-step pipeline:
     * A user submits a query through the Streamlit interface.
     * The agent creates an embedding for the user's query.
     * It calculates the cosine similarity between the query embedding and all the document section embeddings to find the most relevant context.
-    * 
+   
 4.  **Answer Generation**: The identified context and the original query are passed to the question-answering model, which extracts the most likely answer from the text.
    
 5.  **Display**: The final answer is displayed to the user in the chat interface.
