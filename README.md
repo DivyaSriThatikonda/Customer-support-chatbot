@@ -1,4 +1,3 @@
-# Customer-support-chatbot
 # Customer Support Bot with Agentic Workflow
 
 ![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)
@@ -33,17 +32,17 @@ The application is deployed and publicly accessible.
 The bot operates through a multi-step pipeline:
 
 1.  **Initialization**: Upon starting, the agent loads the pre-trained NLP models (a question-answering model and a sentence-embedding model) from Hugging Face.
-2.  
-3.  **Document Processing**: It reads the `faq.txt` file, splits it into logical sections (paragraphs), and creates a numerical vector embedding for each section. These embeddings are stored for efficient searching.
    
-5.  **Query Handling**:
+2.  **Document Processing**: It reads the `faq.txt` file, splits it into logical sections (paragraphs), and creates a numerical vector embedding for each section. These embeddings are stored for efficient searching.
+   
+3.  **Query Handling**:
     * A user submits a query through the Streamlit interface.
     * The agent creates an embedding for the user's query.
     * It calculates the cosine similarity between the query embedding and all the document section embeddings to find the most relevant context.
     * 
-6.  **Answer Generation**: The identified context and the original query are passed to the question-answering model, which extracts the most likely answer from the text.
+4.  **Answer Generation**: The identified context and the original query are passed to the question-answering model, which extracts the most likely answer from the text.
    
-8.  **Display**: The final answer is displayed to the user in the chat interface.
+5.  **Display**: The final answer is displayed to the user in the chat interface.
 
 ---
 ## 💻 Technologies Used
