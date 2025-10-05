@@ -66,8 +66,8 @@ To run this project on your local machine, follow these steps:
 
 1.  **Clone the repository:**
     ```sh
-    git clone <YOUR_GITHUB_REPO_URL>
-    cd <YOUR_PROJECT_DIRECTORY>
+    git clone https://github.com/DivyaSriThatikonda/Customer-support-chatbot
+    cd Customer-support-chatbot
     ```
 
 2.  **Create and activate a virtual environment (recommended):**
